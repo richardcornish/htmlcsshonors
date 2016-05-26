@@ -2,9 +2,7 @@
 
 This repository contains the source code of the HTML/CSS Honors course.
 
-[http://htmlcsshonors.org](http://htmlcsshonors.org/)
-
-[http://htmlcsshonors.org.s3-website-us-east-1.amazonaws.com](http://htmlcsshonors.org.s3-website-us-east-1.amazonaws.com/)
+[https://htmlcsshonors.org](https://htmlcsshonors.org/)
 
 ## Install
 
