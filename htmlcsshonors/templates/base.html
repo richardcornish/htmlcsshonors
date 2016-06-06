@@ -1,74 +1,66 @@
 <!DOCTYPE html>
+
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="{% static '/static/css/bootstrap.css' %}">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="{% static '/static/css/bootstrap-theme.css' %}">
-        <link rel="stylesheet" href="{% static '/static/css/main.css' %}">
-        <script src="{% static '/static/js/vendor/modernizr-2.6.2.js' %}"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>HTML &amp; CSS Honors</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HTML/CSS Honors is a summer course teaching academically talented students">
+    <link rel="stylesheet" href="{% static '/static/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/static/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static '/static/img/favicon.ico' %}">
+</head>
 
-    <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{% url "/index.html" %}">Project name</a>
+<body>
+
+<div class="sp-sm-4">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">                              
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <header>
+                            <a class="navbar-brand" href="{% url "/" %}">HTML/CSS Honors</a>
+                        </header>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="{% if_current_page '/materials.html' 'active' '' %}"><a href="{% url "/materials.html" %}">Materials</a></li>
+                            <li class="{% if_current_page '/schedule.html' 'active' '' %}"><a href="{% url "/schedule.html" %}">Schedule</a></li>
+                            <li class="{% if_current_page '/resources.html' 'active' '' %}"><a href="{% url "/resources.html" %}">Resources</a></li>
+                            <li class="{% if_current_page '/instructors.html' 'active' '' %}"><a href="{% url "/instructors.html" %}">Instructors</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="{% if_current_page '/index.html' 'active' '' %}"><a href="{% url '/index.html' %}">Home</a></li>
-            <li class="{% if_current_page '/about.html' 'active' '' %}"><a href="{% url '/about.html' %}">About</a></li>
-            <li class="{% if_current_page '/contact.html' 'active' '' %}"><a href="{% url '/contact.html' %}">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
+    </nav>
+</div>
+
+{% block content_container %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            {% block content %}
+            {% endblock %}
+        </div>
     </div>
+</div>
+{% endblock %}
 
-    {% block body %}
-    {% endblock %}
+<script src="{% static '/static/js/jquery.js' %}"></script>
+<script src="{% static '/static/js/bootstrap.js' %}"></script>
+<script src="{% static '/static/js/script.js' %}"></script>
+{% block scripts %}
+{% endblock %}
 
-    <script src="{% static '/static/js/vendor/jquery-1.10.1.js' %}"></script>
-    <script src="{% static '/static/js/vendor/bootstrap.js' %}"></script>
-    <script src="{% static '/static/js/main.js' %}"></script>
-  </body>
-
-  {% block scripts %}
-  {% endblock %}
+</body>
 </html>
