@@ -19,6 +19,7 @@ h1 {
     font-size: 7rem;
     line-height: 6.5rem;
     letter-spacing: -2px;
+    word-wrap: break-word;
 }
 
 h2 {
