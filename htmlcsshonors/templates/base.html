@@ -19,7 +19,7 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">                              
+                <div class="col-md-12">                              
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -33,6 +33,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
+                            <li class="{% if_current_page '/description.html' 'active' '' %}"><a href="{% url "/description.html" %}">Description</a></li>
                             <li class="{% if_current_page '/materials.html' 'active' '' %}"><a href="{% url "/materials.html" %}">Materials</a></li>
                             <li class="{% if_current_page '/schedule.html' 'active' '' %}"><a href="{% url "/schedule.html" %}">Schedule</a></li>
                             <li class="{% if_current_page '/resources.html' 'active' '' %}"><a href="{% url "/resources.html" %}">Resources</a></li>
@@ -48,7 +49,7 @@
 {% block content_container %}
 <div class="container">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8">
             {% block content %}
             {% endblock %}
         </div>

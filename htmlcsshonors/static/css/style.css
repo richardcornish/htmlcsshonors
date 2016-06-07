@@ -4,6 +4,7 @@
 
 body {
     font-size: 16px;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -102,7 +103,7 @@ hr {
 .lead {
     margin-bottom: .5rem;
     font-size: 2rem;
-    color: #999;
+    color: #888;
 }
 
 .navbar {
@@ -112,6 +113,14 @@ hr {
 .navbar-default {
     background-color: #fff;
 }
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
 
 .navbar-default .navbar-brand {
     color: #5c2e91;
