@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 
+{% block title %}Page not found &#8226; {{ block.super }}{% endblock %}
+
+
 {% block content %}
     <h1>Yikes!</h1>
     <p>We're sorry, but the page at <b id="url"></b> couldn't be found.</p>
