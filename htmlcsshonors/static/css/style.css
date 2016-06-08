@@ -21,6 +21,7 @@ h1, .h1 {
     line-height: 6.5rem;
     letter-spacing: -2px;
     word-wrap: break-word;
+    -webkit-hyphens: auto;
 }
 
 h2, .h2 {
