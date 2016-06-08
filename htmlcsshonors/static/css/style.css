@@ -212,6 +212,12 @@ hr {
     border-color: #5c2e91;
 }
 
+.pager li > a:hover, .pager li > a:focus {
+    color: #5c2e91;
+    background-color: rgba(92, 46, 145, .05);
+    border-color: #5c2e91;
+}
+
 ::selection {
     background: rgba(255, 203, 5, .25);
 }
