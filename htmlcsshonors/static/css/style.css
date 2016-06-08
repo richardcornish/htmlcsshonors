@@ -210,3 +210,11 @@ hr {
     background-color: rgba(92, 46, 145, .1);
     border-color: #5c2e91;
 }
+
+::selection {
+    background: rgba(255, 203, 5, .25);
+}
+
+::-moz-selection {
+    background: rgba(255, 203, 5, .25);
+}
