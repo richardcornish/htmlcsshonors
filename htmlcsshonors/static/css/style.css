@@ -17,19 +17,33 @@ h1, h2, .h1, .h2 {
 }
 
 h1, .h1 {
-    margin: 0 0 3rem;
-    font-size: 7rem;
-    line-height: 6.5rem;
+    margin: 0 0 2rem;
+    font-size: 5rem;
+    line-height: 5rem;
     letter-spacing: -2px;
     word-wrap: break-word;
-    -webkit-hyphens: auto;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        margin: 0 0 3rem;
+        font-size: 7rem;
+        line-height: 6.5rem;
+    }
 }
 
 h2, .h2 {
     margin: 0 0 1rem;
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
 }
 
 h3, .h3 {
@@ -143,11 +157,20 @@ hr {
 
 @media (min-width: 768px) {
     .navbar-collapse {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
+@media (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 0;
+    }
+}
+
+.navbar-toggle {
+    margin-right: 0;
+}
 
 .navbar-default .navbar-brand {
     color: #5c2e91;
@@ -224,4 +247,8 @@ hr {
 
 ::-moz-selection {
     background: rgba(255, 203, 5, .25);
+}
+
+.no-collapse {
+    display: inline-block;
 }
