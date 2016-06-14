@@ -1,0 +1,21 @@
+{
+  "name": "htmlcsshonors",
+  "description": "This repository contains the source code of the HTML/CSS Honors course.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Richard Cornish"
+  ],
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/richardcornish/htmlcsshonors",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0"
+  }
+}
