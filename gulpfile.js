@@ -10,7 +10,6 @@ var imagemin     = require('gulp-imagemin');
 var jshint       = require('gulp-jshint');
 var less         = require('gulp-less');
 var cleancss     = require('gulp-clean-css');
-var modernizr    = require('gulp-modernizr');
 var plumber      = require('gulp-plumber');
 var rename       = require('gulp-rename');
 var sourcemaps   = require('gulp-sourcemaps');
@@ -122,18 +121,8 @@ gulp.task('jshint', ['coffee'], function () {
 });
 
 
-// Modernizr
-gulp.task('modernizr', ['jshint'], function () {
-    return gulp.src([
-        paths.static + 'js/**/*.js'
-    ])
-    .pipe(modernizr())
-    .pipe(gulp.dest(paths.static + 'js'));
-});
-
-
 // JavaScript
-gulp.task('js', ['modernizr'], function () {
+gulp.task('js', ['jshint'], function () {
     return gulp.src([
         paths.bower + 'jquery/dist/jquery.js',
         paths.bower + 'bootstrap/dist/js/bootstrap.js',
