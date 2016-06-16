@@ -303,7 +303,7 @@ hr
 {
     color: #5c2e91;
     border-color: #5c2e91;
-    background-color: rgba(92, 46, 145, .1);
+    background-color: rgba(92, 46, 145, .01);
 }
 .pager li > a:hover,
 .pager li > a:focus
@@ -314,17 +314,17 @@ hr
 }
 ::-moz-selection
 {
-    background-color: #9c6ed1;
+    background-color: rgba(255, 203, 5, .25);
     text-shadow: none;
 }
 ::selection
 {
-    background-color: #9c6ed1;
+    background-color: rgba(255, 203, 5, .25);
     text-shadow: none;
 }
 ::-moz-selection
 {
-    background-color: #9c6ed1;
+    background-color: rgba(255, 203, 5, .25);
     text-shadow: none;
 }
 .cell
