@@ -202,6 +202,12 @@ hr {
     }
 }
 
+.table > tbody > tr.golden {
+    & > th, & > td {
+        background-color: fade(@golden, 15%);
+    }
+}
+
 .highlight() {
     text-shadow: none;
     background-color: fade(@golden, 25%);
