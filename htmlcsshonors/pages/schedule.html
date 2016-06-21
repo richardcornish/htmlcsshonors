@@ -4,10 +4,137 @@
 {% block title %}Schedule &#8226; {{ block.super }}{% endblock %}
 
 
-{% block content %}
+{% block content_container %}
 
-<h1>Schedule</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
 
-<p>Coming soon.</p>
+<div class="sp-sm-4">
+    <h1>Schedule</h1>
+</div>
+
+<h2>Week 1</h2>
+
+<div class="table-responsive">
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Activity</th>
+                <th scope="col">Material</th>
+                <th scope="col">Assignment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>First webpage</td>
+                <td>
+                    <ol>
+                        <li>Introductions</li>
+                        <li>Pre-assessment quiz</li>
+                        <li>Software, compatibility, developer tools</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="https://www.google.com/chrome/browser/desktop/">Chrome</a></li>
+                        <li><a href="https://atom.io/">Atom</a></li>
+                        <li><a href="https://codepen.io/signup/free">CodePen</a></li>
+                        <li><a href="http://learn.shayhowe.com/html-css/building-your-first-web-page/">Building Your First Web Page</a></li>
+                    </ul>
+                </td>
+                <td>Create a basic webpage and link to five different websites</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td>HTML elements</td>
+                <td>
+                    <ol>
+                        <li>Review assignment</li>
+                        <li>Quiz</li>
+                        <li>Elements, semantics, structure, hyperlinks of HTML5</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="http://learn.shayhowe.com/html-css/getting-to-know-html/">Getting to Know HTML</a></li>
+                        <li><a href="http://xahlee.info/js/html5_tags.html">HTML5 Tags Complete List</a></li>
+                    </ul>
+                </td>
+                <td>Create a webpage with all HTML5 elements</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td>CSS selectors</td>
+                <td>
+                    <ol>
+                        <li>Review assignment</li>
+                        <li>Quiz</li>
+                        <li>Cascade, specificity, selectors, classes, declarations of CSS3</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="http://learn.shayhowe.com/html-css/getting-to-know-css/">Getting to know CSS</a></li>
+                    </ul>
+                </td>
+                <td>Create a webpage with a CSS cascade, specificity, and selectors</td>
+            </tr>
+            <tr>
+                <th scope="row">Thursday</th>
+                <td>Box model</td>
+                <td>
+                    <ol>
+                        <li>Review assignment</li>
+                        <li>Quiz</li>
+                        <li>Margins, borders, paddings, backgrounds, gradients</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="http://learn.shayhowe.com/html-css/opening-the-box-model/">Opening the Box Model</a></li>
+                        <li><a href="http://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">Setting Backgrounds &amp; Gradients</a></li>
+                    </ul>
+                </td>
+                <td>Create a webpage with a backgrounds of different images, multiple images, colors, and gradients</td>
+            </tr>
+            <tr>
+                <th scope="row">Friday</th>
+                <td>Typography</td>
+                <td>
+                    <ol>
+                        <li>Review assignment</li>
+                        <li>Quiz</li>
+                        <li>Text, fonts, lists</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="http://learn.shayhowe.com/html-css/working-with-typography/">Working with Typography</a></li>
+                        <li><a href="http://learn.shayhowe.com/html-css/creating-lists/">Creating Lists</a></li>
+                    </ul>
+                </td>
+                <td>Create a webpage with text, fonts, and lists, and style them</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="sp-sm-4">
+    <nav>
+        <ul class="pager">
+            <li class="next"><a href="{% url "/instructors.html" %}">Instructors &rarr;</a></li>
+        </ul>
+    </nav>
+</div>
+
+        </div>
+    </div>
+</div>
 
 {% endblock %}

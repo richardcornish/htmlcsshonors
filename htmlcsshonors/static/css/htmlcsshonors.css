@@ -8914,6 +8914,15 @@ h2,
     {
         font-size: 5rem;
         line-height: 5rem;
+
+        margin: 0 0 3rem;
+    }
+    h2 + .table,
+    .h2 + .table,
+    h2 + .table-responsive,
+    .h2 + .table-responsive
+    {
+        margin-top: 3rem;
     }
 }
 h3,
@@ -8928,20 +8937,20 @@ h3,
 
     color: #444;
 }
-h3 + .cell,
-.h3 + .cell
-{
-    margin-top: -1rem;
-}
 h4,
 .h4
 {
     font-size: 2rem;
     line-height: 2rem;
 
-    margin: 0 0 .75rem;
+    margin: 2rem 0 .75rem;
 
     color: #666;
+}
+.cell h4,
+.cell .h4
+{
+    margin-top: .5rem;
 }
 p,
 ul,
@@ -8950,6 +8959,13 @@ dl,
 address
 {
     margin-bottom: 1rem;
+}
+ul,
+ol,
+dl
+{
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 a:link
 {
@@ -9088,6 +9104,21 @@ hr
     color: #5c2e91;
     border-color: #5c2e91;
     background-color: rgba(92, 46, 145, .05);
+}
+.table
+{
+    font-size: 14px;
+}
+.table ul
+{
+    padding: 0 0 0 2rem;
+}
+@media (min-width: 768px)
+{
+    .table
+    {
+        font-size: 15px;
+    }
 }
 ::-moz-selection
 {
