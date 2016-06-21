@@ -45,7 +45,7 @@ gulp.task('less', ['css:clean'], function () {
         sourceRoot: '../less'
     }))
     .pipe(gulp.dest(paths.static + 'css'))
-    .pipe(browsersync.stream());
+    .pipe(browsersync.stream({stream: true}));
 });
 
 
