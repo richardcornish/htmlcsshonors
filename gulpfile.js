@@ -126,6 +126,7 @@ gulp.task('js', ['jshint'], function () {
     return gulp.src([
         paths.bower + 'jquery/dist/jquery.js',
         paths.bower + 'bootstrap/dist/js/bootstrap.js',
+        paths.bower + 'moment/moment.js',
         paths.static + 'js/**/*.js'
     ])
     .pipe(concat(paths.name + '.js'))
