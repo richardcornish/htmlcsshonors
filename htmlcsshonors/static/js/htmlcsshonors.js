@@ -16243,10 +16243,10 @@ var Honors = (function ($) {
              }
          });
 
-     }
+     };
      return {
         'highlightToday': highlightToday
-     }
+     };
  })(jQuery);
 
 // Document ready
