@@ -179,7 +179,11 @@ p,
 ul,
 ol,
 dl,
-address
+address,
+ul ul,
+ol ul,
+ul ol,
+ol ol
 {
     margin-bottom: 1rem;
 }
@@ -314,6 +318,10 @@ hr
     border-color: #5c2e91;
     background-color: rgba(92, 46, 145, .01);
 }
+.list-table_cell
+{
+    padding-left: 1rem;
+}
 .pager li > a:hover,
 .pager li > a:focus
 {
@@ -329,10 +337,6 @@ hr
 .table ul
 {
     margin-bottom: 0;
-}
-.table .list-table_cell li a
-{
-    display: inline-block;
 }
 @media (min-width: 768px)
 {

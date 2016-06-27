@@ -70,7 +70,7 @@ h4, .h4 {
     }
 }
 
-p, ul, ol, dl, address {
+p, ul, ol, dl, address, ul ul, ol ul, ul ol, ol ol {
     margin-bottom: 1rem;
 }
 
@@ -178,6 +178,10 @@ hr {
     }
 }
 
+.list-table_cell {
+    padding-left: 1rem;
+}
+
 .pager li > a {
     &:hover, &:focus {
         color: @purple;
@@ -191,11 +195,6 @@ hr {
     line-height: 1.2;
     ul {
         margin-bottom: 0;
-    }
-    .list-table_cell li {
-        a {
-            display: inline-block;
-        }
     }
     @media (min-width: 768px) {
         font-size: 15px;
