@@ -38,8 +38,8 @@
                         <ul class="nav navbar-nav">
                             <li class="{% if_current_page '/about.html' 'active' '' %}"><a href="{% url "/about.html" %}">About</a></li>
                             <li class="{% if_current_page '/materials.html' 'active' '' %}"><a href="{% url "/materials.html" %}">Materials</a></li>
-                            <li class="{% if_current_page '/assessment.html' 'active' '' %}"><a href="{% url "/assessment.html" %}">Assessment</a></li>
                             <li class="{% if_current_page '/schedule.html' 'active' '' %}"><a href="{% url "/schedule.html" %}">Schedule</a></li>
+                            <li class="{% if_current_page '/assessment.html' 'active' '' %}"><a href="{% url "/assessment.html" %}">Assessment</a></li>
                             <li class="{% if_current_page '/instructors.html' 'active' '' %}"><a href="{% url "/instructors.html" %}">Instructors</a></li>
                         </ul>
                     </div>
@@ -50,14 +50,44 @@
 </div>
 
 {% block content_container %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
+<main>    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+            </div>
         </div>
     </div>
-</div>
+</main>
+{% endblock %}
+
+
+{% block footer_container %}
+<footer>    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                {% block footer %}
+                <div class="sp-sm-2">
+                    <hr>
+                    <ul class="list-inline small">
+                        <li class="{% if_current_page '/index.html' 'active' '' %}"><a href="{% url "/about.html" %}">Home</a></li>
+                        <li class="{% if_current_page '/about.html' 'active' '' %}"><a href="{% url "/about.html" %}">About</a></li>
+                        <li class="{% if_current_page '/materials.html' 'active' '' %}"><a href="{% url "/materials.html" %}">Materials</a></li>
+                        <li class="{% if_current_page '/schedule.html' 'active' '' %}"><a href="{% url "/schedule.html" %}">Schedule</a></li>
+                        <li class="{% if_current_page '/assessment.html' 'active' '' %}"><a href="{% url "/assessment.html" %}">Assessment</a></li>
+                        <li class="{% if_current_page '/instructors.html' 'active' '' %}"><a href="{% url "/instructors.html" %}">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="sp-sm-6">
+                    <p class="small">&#169; {% now "Y" %}. HTML &amp; CSS Honors.</p>
+                </div>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</footer>
 {% endblock %}
 
 {% if debug %}
