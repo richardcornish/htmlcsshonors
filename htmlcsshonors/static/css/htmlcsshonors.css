@@ -9095,9 +9095,10 @@ hr
     border-color: #5c2e91;
     background-color: rgba(92, 46, 145, .01);
 }
-.list-table_cell
+.list-table_cell li
 {
-    padding-left: 1rem;
+    padding-bottom: .75rem;
+    padding-left: .5rem;
 }
 .pager li > a:hover,
 .pager li > a:focus
