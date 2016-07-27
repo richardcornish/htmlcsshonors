@@ -117,7 +117,7 @@
                     <td>
                         <ul class="list-unstyled list-table_cell">
                             <li>Read &ldquo;<a href="http://learn.shayhowe.com/html-css/getting-to-know-html/">Getting to know HTML</a>&rdquo;</li>
-                            <li>Create a semantic webpage out of the &ldquo;<a href="https://dl.dropboxusercontent.com/u/2066483/assignment_3-text.txt">Solar System News</a>.&rdquo; You <em>must</em> use <a href="https://dl.dropboxusercontent.com/u/2066483/assignment_3-elements.txt">these HTML5 elements</a>. CSS is optional.</li>
+                            <li>Create a semantic webpage out of the &ldquo;<a href="{% static '/static/assignments/assignments-3-text.txt' %}">Solar System News</a>.&rdquo; You <em>must</em> use <a href="{% static '/static/assignments/assignments-3-elements.txt' %}">these HTML5 elements</a>. CSS is optional.</li>
                             <li>Email <code>.zip</code> file of homework in <a href="#homework">proper format</a></li>
                         </ul>
                     </td>
@@ -192,7 +192,17 @@
                     <td>
                         <ul class="list-unstyled list-table_cell">
                             <li>Read &ldquo;<a href="http://learn.shayhowe.com/html-css/working-with-typography/">Working with Typography</a>&rdquo;</li>
-                            <li>Re-create <a href="https://dl.dropboxusercontent.com/u/2066483/fallingwater-webpage.png">this image</a> of a webpage in HTML and CSS. Use <a href="https://dl.dropboxusercontent.com/u/2066483/fallingwater-photo.jpg">this photo</a> and <a href="https://en.wikipedia.org/wiki/Fallingwater">this Wikipedia link</a>. <a href="https://dl.dropboxusercontent.com/u/2066483/fallingwater-hints.txt">Here are some hints</a> to get started. Note: Redisplaying the assignment image will result in a score of 0.</li>
+                            <li>
+                                <p>Re-create <a href="{% static '/static/assignments/assignments-5.png' %}">this image</a> of a webpage in HTML and CSS. Use <a href="{% static '/static/assignments/assignments-5-photo.jpg' %}">this photo</a> and <a href="https://en.wikipedia.org/wiki/Fallingwater">this Wikipedia link</a>. Use these hints:</p>
+                                <ul>
+                                    <li>Include a <a href="https://fonts.google.com/">custom web font from Google</a> with a <code>&lt;link&gt;</code> tag and <code>h1 { font-family: PlayFair Display, serif; }</code></li>
+                                    <li>Change the paragraph font to Georgia with <code>p { font-family: Georgia, serif; }</code></li>
+                                    <li>Float an image with <code>img { float: left; }</code></li>
+                                    <li>The top color of the background gradient is <code>#1AD6FD</code></li>
+                                    <li>Center a block-level element by setting a valid width <em>and</em> declaring <code>margin-left: auto;</code> and <code>margin-right: auto;</code></li>
+                                </ul>
+                                <p>Note: Redisplaying the assignment image will result in a score of 0.</p>
+                            </li>
                             <li>Email <code>.zip</code> file of homework in <a href="#homework">proper format</a></li>
                         </ul>
                     </td>
@@ -233,7 +243,7 @@
                     <td>
                         <ul class="list-unstyled list-table_cell">
                             <li>Read &ldquo;<a href="http://learn.shayhowe.com/html-css/adding-media/">Adding Media</a>&rdquo;</li>
-                            <li>Create an HTML5 webpage for the U.S. Declaration of Independence. Include an appropriate <code>&lt;h1&gt;</code> and the text of the declaration in proper HTML. Also include an image of the declaration, <a href="https://dl.dropboxusercontent.com/u/2066483/assignment_6-audio.mp3">MP3 audio of the declaration being read</a>, <a href="https://dl.dropboxusercontent.com/u/2066483/assignment_6-video.mp4">video of the American flag</a>, and an iframe Google Map of where the declaration is. Create a section where I can e-mail the president. Create a visually compelling, easy-to-read design with a linked stylesheet.</li>
+                            <li>Create an HTML5 webpage for the U.S. Declaration of Independence. Include an appropriate <code>&lt;h1&gt;</code> and the text of the declaration in proper HTML. Also include an image of the declaration, <a href="{% static '/static/assignments/assignments-6-declaration.mp3' %}">MP3 audio of the declaration being read</a>, <a href="{% static '/static/assignments/assignments-6-flag.mp4' %}">video of the American flag</a>, and an <code>&lt;iframe&gt;</code> Google Map of where the declaration is. Create a section where I can e-mail the president. Create a visually compelling, easy-to-read design with a linked stylesheet.</li>
                             <li>Email <code>.zip</code> file of homework in <a href="#homework">proper format</a></li>
                         </ul>
                     </td>
@@ -257,7 +267,7 @@
                     <td>
                         <ul class="list-unstyled list-table_cell">
                             <li>Read &ldquo;<a href="http://learn.shayhowe.com/html-css/positioning-content/">Positioning Content</a>&rdquo;</li>
-                            <li>Re-create the <a href="https://dl.dropboxusercontent.com/u/2066483/assignment_7-webpage.png">image of this webpage</a> in HTML and CSS. Recall today's lesson about rows, columns, percentages, and clearfix. Simply redisplaying the assignment image itself in a webpage will result in a score of zero.</li>
+                            <li><a href="{% static '/static/assignments/assignments-7.png' %}">Re-create this image</a> in HTML and CSS. Do not use images. Recall today's lesson about rows, columns, percentages, and clearfix. Simply redisplaying the assignment image itself in a webpage will result in a score of zero.</li>
                             <li>Email <code>.zip</code> file of homework in <a href="#homework">proper format</a></li>
                         </ul>
                     </td>
@@ -280,7 +290,7 @@
                     <td>
                         <ul class="list-unstyled list-table_cell">
                             <li>Read &ldquo;<a href="http://learn.shayhowe.com/html-css/positioning-content/">Positioning Content</a>&rdquo; and &ldquo;<a href="http://learn.shayhowe.com/html-css/organizing-data-with-tables/">Organizing Data with Tables</a>&rdquo;</li>
-                            <li><a href="https://dl.dropboxusercontent.com/u/2066483/assignment_8-shapes.png">Re-create this image</a> in HTML and CSS. Do not use images.</li>
+                            <li><a href="{% static '/static/assignments/assignments-8.png' %}">Re-create this image</a> in HTML and CSS. Do not use images.</li>
                             <li>Also create three HTML tables with the same data of the <a href="https://en.wikipedia.org/wiki/Demographics_of_Chicago#Population">census population of Chicago</a> for the last 10 years. Create appropriate table rows, cell, and table head markup. One table must have <a href="http://alistapart.com/d/zebrastripingdoesithelp/data-table.png">zebra rows</a> without classes targeting the rows. One table must have a header with a dark background color and light text. One table must have borders on the rows.</li>
                         </ul>
                     </td>
@@ -396,8 +406,7 @@
                         <ul class="list-unstyled list-table_cell">
                             <li>
                                 <p>Create ten squares of the same size with ten different colors. Three colors should be hex, three colors should be RGB, and four colors should be gradients using hex or RGB. Apply each effect to a different square, specifically:</p>
-
-                                <ol>
+                                <ul>
                                     <li>Rotate a square <code>89deg</code> and scale it by <code>1.7</code>.</li>
                                     <li>Translate a square <code>-15px</code> horizontally and <code>5%</code> vertically. </li>
                                     <li>Add a perspective of <code>200px</code>, skew a square <code>10deg</code> vertically, rotate <code>45deg</code> along X axis, and change transform origin to <code>bottom right</code>.</li>
@@ -408,7 +417,7 @@
                                     <li>Create a transition that changes the background color to <code>#57890a</code> over <code>.5s</code> with a <code>linear</code> timing function, the border radius to <code>50%</code> over <code>1.3s</code> with an <code>ease-in-out</code> timing function</li>
                                     <li>Create an animation on a stage that moves the square in a square path that is a <code>200px</code> wide and <code>200px</code> high, changes the square to a circle <em>and</em> fades to <code>#678fa3</code> halfway through, then changes the circle back to a square at the end and fades back to original color, all with an <code>ease-in</code> timing function</li>
                                     <li>Create an animation on a stage that moves the square from the left edge of the browser to the right edge of the browser, over <code>1s</code>, with an <code>ease-out</code> timing function, that rotates <code>720deg</code> on the right and back to <code>0deg</code> on the left, and includes a pause with an <code>:active</code> pseudo-class.</li>
-                                </ol>
+                                </ul>
                             </li>
                             <li>Work on <a href="#final">final project</a></li>
                         </ul>
