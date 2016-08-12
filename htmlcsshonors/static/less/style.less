@@ -208,6 +208,18 @@ hr {
     }
 }
 
+.alert-info {
+    border-color: @golden;
+    background-color: fade(@golden, 5%);
+    color: @text-color-light;
+    a {
+        color: darken(@golden, 15%);
+    }
+    code {
+        background-color: fade(@golden, 25%);
+    }
+}
+
 .highlight() {
     text-shadow: none;
     background-color: fade(@golden, 25%);

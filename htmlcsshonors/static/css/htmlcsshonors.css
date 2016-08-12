@@ -9128,6 +9128,20 @@ hr
 {
     background-color: rgba(255, 203, 5, .15);
 }
+.alert-info
+{
+    color: #444;
+    border-color: #ffcb05;
+    background-color: rgba(255, 203, 5, .05);
+}
+.alert-info a
+{
+    color: #b79100;
+}
+.alert-info code
+{
+    background-color: rgba(255, 203, 5, .25);
+}
 ::-moz-selection
 {
     background-color: rgba(255, 203, 5, .25);
