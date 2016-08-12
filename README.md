@@ -1,6 +1,6 @@
-# HTML/CSS Honors
+# HTML & CSS Honors
 
-This repository contains the source code of the HTML & CSS Honors course. Deployed to Amazon S3.
+This repository contains the source code of the HTML & CSS Honors course website. Deployed to Amazon S3.
 
 [http://htmlcsshonors.org](http://htmlcsshonors.org/)
 
