@@ -1,10 +1,8 @@
 # HTML/CSS Honors
 
-This repository contains the source code of the HTML & CSS Honors course.
+This repository contains the source code of the HTML & CSS Honors course. Deployed to Amazon S3.
 
 [http://htmlcsshonors.org](http://htmlcsshonors.org/)
-
-Deployed to Amazon S3.
 
 [http://htmlcsshonors.org.s3-website-us-east-1.amazonaws.com](http://htmlcsshonors.org.s3-website-us-east-1.amazonaws.com/)
 
@@ -24,4 +22,4 @@ cactus serve
 
 ## Docs
 
-- [Cactus documentation](https://github.com/koenbok/cactus)
+[Cactus documentation](https://github.com/koenbok/cactus)
