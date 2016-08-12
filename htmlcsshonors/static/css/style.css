@@ -207,6 +207,11 @@ hr
 {
     margin: 2rem 0;
 }
+small,
+.small
+{
+    color: #888;
+}
 .lead
 {
     font-size: 2rem;
