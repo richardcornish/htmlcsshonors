@@ -206,11 +206,13 @@ a:hover
 hr
 {
     margin: 2rem 0;
+
+    border-color: rgba(92, 46, 145, .15);
 }
 small,
 .small
 {
-    color: #888;
+    color: rgba(92, 46, 145, .4);
 }
 .lead
 {
@@ -226,6 +228,8 @@ small,
 }
 .navbar-default
 {
+    border: none;
+    border-bottom: 1px solid rgba(92, 46, 145, .15);
     background-color: #fff;
 }
 .navbar-default .navbar-brand
@@ -268,6 +272,15 @@ small,
 .navbar-default .navbar-toggle .icon-bar
 {
     background-color: #5c2e91;
+}
+.navbar-default .navbar-collapse
+{
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    border-top: 1px solid rgba(92, 46, 145, .15);
 }
 .navbar-toggle
 {

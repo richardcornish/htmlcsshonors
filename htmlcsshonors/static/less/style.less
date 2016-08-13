@@ -90,10 +90,11 @@ a {
 
 hr {
     margin: 2rem 0;
+    border-color: fade(@purple, 15%);
 }
 
 small, .small {
-    color: @text-color-lightest;
+    color: fade(@purple, 40%);
 }
 
 .lead {
@@ -108,6 +109,8 @@ small, .small {
 
 .navbar-default {
     background-color: #fff;
+    border: none;
+    border-bottom: 1px solid fade(@purple, 15%);
     .navbar-brand {
         color: @purple;
         &:hover, &:focus {
@@ -138,6 +141,13 @@ small, .small {
         .icon-bar {
             background-color: @purple;
         }
+    }
+    .navbar-collapse {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid fade(@purple, 15%);
     }
 }
 
