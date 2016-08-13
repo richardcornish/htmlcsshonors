@@ -13,7 +13,9 @@ var cleancss     = require('gulp-clean-css');
 var plumber      = require('gulp-plumber');
 var rename       = require('gulp-rename');
 var sourcemaps   = require('gulp-sourcemaps');
+var svgmin       = require('gulp-svgmin');
 var uglify       = require('gulp-uglify');
+var gutil        = require('gulp-util');
 
 // Paths
 var paths = {
@@ -178,6 +180,19 @@ gulp.task('images', function () {
 });
 
 
+// SVGs
+gulp.task('svgs', function () {
+    return gulp.src([
+        paths.static + 'img/**/*.{svg}'
+    ])
+    .pipe(svgmin())
+    .pipe(rename({
+        suffix: '.min'
+    }))
+    .pipe(gulp.dest(paths.static + 'img'));
+});
+
+
 // Gulp watch tasks (keep it minimal)
 gulp.task('watch', function () {
     browsersync.init({
@@ -204,5 +219,6 @@ gulp.task('default', [
     'css:optimize',
     'js:optimize',
     'images',
+    'svgs',
     'fonts'
 ]);

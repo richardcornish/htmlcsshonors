@@ -8073,7 +8073,8 @@ button.close
     {
         transition: transform .6s ease-in-out;
 
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         perspective: 1000px;
     }
     .carousel-inner > .item.next,
@@ -9057,7 +9058,7 @@ small,
     padding-right: 15px;
     padding-left: 15px;
 
-    border-top: 1px solid rgba(92, 46, 145, .15);
+    border-color: rgba(92, 46, 145, .15);
 }
 .navbar-toggle
 {
@@ -9065,10 +9066,12 @@ small,
 }
 @media (min-width: 768px)
 {
-    .navbar-collapse
+    .navbar-default .navbar-collapse
     {
         padding-right: 0;
         padding-left: 0;
+
+        border-color: transparent;
     }
 }
 @media (max-width: 768px)
@@ -9159,6 +9162,14 @@ small,
 .alert-info code
 {
     background-color: rgba(255, 203, 5, .25);
+}
+.img-logo-ctd
+{
+    margin-top: 10px;
+}
+.img-logo-northwestern
+{
+    width: 60%;
 }
 ::-moz-selection
 {

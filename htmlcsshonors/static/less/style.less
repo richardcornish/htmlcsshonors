@@ -147,7 +147,7 @@ small, .small {
         margin-right: -15px;
         padding-left: 15px;
         padding-right: 15px;
-        border-top: 1px solid fade(@purple, 15%);
+        border-color: fade(@purple, 15%);
     }
 }
 
@@ -156,9 +156,12 @@ small, .small {
 }
 
 @media (min-width: 768px) {
-    .navbar-collapse {
-        padding-right: 0;
-        padding-left: 0;
+    .navbar-default {
+        .navbar-collapse {
+            padding-right: 0;
+            padding-left: 0;
+            border-color: transparent;
+        }
     }
 }
 
@@ -232,6 +235,14 @@ small, .small {
     code {
         background-color: fade(@golden, 25%);
     }
+}
+
+.img-logo-ctd {
+    margin-top: 10px;
+}
+
+.img-logo-northwestern {
+    width: 60%;
 }
 
 .highlight() {
