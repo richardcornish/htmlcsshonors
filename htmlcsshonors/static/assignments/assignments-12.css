@@ -29,7 +29,6 @@ body {
 
 .shape-4 {
     background-image: linear-gradient(#72EBC7, #71C9FD);
-    background-color: #;
     transform: perspective(148px) rotateY(64deg);
 }
 
