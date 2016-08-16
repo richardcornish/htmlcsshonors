@@ -5,17 +5,22 @@
 
 
 {% block content %}
-    <h1>Yikes!</h1>
-    <p>We're sorry, but the page at <b id="url"></b> couldn't be found.</p>
-    <p>Please <a href="mailto:rich@htmlcsshonors.org">e-mail</a> the course instructor about this error, and we'll get it fixed right away.</p>
+<section class="sp-sm-4">
+    <h1>Page not found</h1>
+</section>
+
+<section class="sp-sm-4">
+    <p>We're sorry, we could not find the page <code class="url"></code>.</p>
+    <p>Please <a href="mailto:rich@htmlcsshonors.org?subject=Page%20not%20found">e-mail the course instructor</a> about this error, and we'll get it fixed right away.</p>
+</section>
 {% endblock %}
 
 
 {% block scripts %}
 <script>
-    $(document).ready(function() {
+    jQuery(document).ready(function() {
         // Add the missing url to the text
-        $("#url").text(window.location.pathname);
-    })
+        $('.url').text(window.location.pathname);
+    });
 </script>
 {% endblock %}
