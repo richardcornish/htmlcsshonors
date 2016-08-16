@@ -1,6 +1,8 @@
 // Honors object
 var Honors = (function ($) {
+
      'use strict';
+
      var highlightToday = function () {
 
          // Today's date
@@ -25,13 +27,15 @@ var Honors = (function ($) {
          });
 
      };
+
      return {
         'highlightToday': highlightToday
      };
+
  })(jQuery);
 
 // Document ready
-jQuery(function () {
+jQuery(document).ready(function () {
     'use strict';
     Honors.highlightToday();
 });
