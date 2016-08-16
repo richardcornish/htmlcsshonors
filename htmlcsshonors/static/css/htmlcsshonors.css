@@ -9173,9 +9173,17 @@ small,
     border-color: #ffcb05;
     background-color: rgba(255, 203, 5, .05);
 }
-.alert-info a
+.alert-info a:link
 {
     color: #b79100;
+}
+.alert-info a:visited
+{
+    color: #846900;
+}
+.alert-info a:hover
+{
+    color: #ebba00;
 }
 .alert-info code
 {

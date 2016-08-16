@@ -240,7 +240,15 @@ small, .small {
     background-color: fade(@golden, 5%);
     color: @text-color-light;
     a {
-        color: darken(@golden, 15%);
+        &:link {
+            color: darken(@golden, 15%);
+        }
+        &:visited {
+            color: darken(@golden, 25%);
+        }
+        &:hover {
+            color: darken(@golden, 5%);
+        }
     }
     code {
         background-color: fade(@golden, 25%);
