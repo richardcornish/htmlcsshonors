@@ -20,6 +20,22 @@ cactus serve
 
 [127.0.0.1:8000](http://127.0.0.1:8000/)
 
+You can also watch front-end asset changes with Gulp:
+
+```
+cactus serve
+gulp watch
+```
+
+[localhost:3000](http://localhost:3000/)
+
+## Deploy
+
+```
+gulp
+cactus deploy
+```
+
 ## Docs
 
 [Cactus documentation](https://github.com/koenbok/cactus)
