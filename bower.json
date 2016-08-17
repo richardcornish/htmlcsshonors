@@ -15,8 +15,8 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap": "^3.3.6",
-    "jquery": "^3.0.0",
-    "moment": "^2.13.0"
+    "moment": "^2.14.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
   }
 }
