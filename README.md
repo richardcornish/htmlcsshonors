@@ -9,12 +9,11 @@ This repository contains the source code of the HTML & CSS Honors course website
 ## Install
 
 ```
-mkvirtualenv htmlcsshonors -p /usr/local/bin/python3
+mkvirtualenv htmlcsshonors -p python3
 git clone git@github.com:richardcornish/htmlcsshonors.git
 cd htmlcsshonors/
 pip install -r requirements.txt
 cd htmlcsshonors/
-cactus build
 cactus serve
 ```
 
@@ -23,7 +22,6 @@ cactus serve
 You can also watch front-end asset changes with Gulp:
 
 ```
-cactus serve
 gulp watch
 ```
 
@@ -33,6 +31,7 @@ gulp watch
 
 ```
 gulp
+cactus build
 cactus deploy
 ```
 
