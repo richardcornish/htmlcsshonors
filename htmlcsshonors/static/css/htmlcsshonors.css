@@ -8928,6 +8928,25 @@ h2,
         margin-top: 3rem;
     }
 }
+h2 a:link,
+.h2 a:link
+{
+    transition: .1s all ease-out;
+
+    color: #ffcb05;
+}
+h2 a:visited,
+.h2 a:visited
+{
+    color: rgba(255, 203, 5, .5);
+}
+h2 a:hover,
+.h2 a:hover
+{
+    text-decoration: none;
+
+    color: rgba(255, 203, 5, .75);
+}
 h3,
 .h3
 {

@@ -50,6 +50,19 @@ h2, .h2 {
             margin-top: 3rem;
         }
     }
+    a {
+        &:link {
+            color: @golden;
+            transition: .1s all ease-out;
+        }
+        &:visited {
+            color: fade(@golden, 50%);
+        }
+        &:hover {
+            color: fade(@golden, 75%);
+            text-decoration: none;
+        }
+    }
 }
 
 h3, .h3 {

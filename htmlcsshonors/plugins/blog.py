@@ -3,7 +3,7 @@ import datetime
 import logging
 
 ORDER = 999
-POSTS_PATH = 'posts/'
+POSTS_PATH = 'blog/'
 POSTS = []
 
 from django.template import Context
@@ -52,6 +52,7 @@ def preBuild(site):
             postContext['date'] = find('date')
             postContext['path'] = page.path
             postContext['body'] = getNode(get_template(page.path), name="body")
+            postContext['page'] = page
 
             # Parse the date into a date object
             try:
@@ -66,7 +67,7 @@ def preBuild(site):
     POSTS = sorted(POSTS, key=lambda x: x['date'])
     POSTS.reverse()
 
-    indexes = xrange(0, len(POSTS))
+    indexes = range(0, len(POSTS))
 
     for i in indexes:
         if i+1 in indexes: POSTS[i]['prevPost'] = POSTS[i+1]
