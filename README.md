@@ -9,7 +9,7 @@ This repository contains the source code of the HTML & CSS Honors course website
 ## Install
 
 ```
-mkvirtualenv htmlcsshonors -p python3
+mkvirtualenv htmlcsshonors
 git clone git@github.com:richardcornish/htmlcsshonors.git
 cd htmlcsshonors/
 pip install -r requirements.txt
