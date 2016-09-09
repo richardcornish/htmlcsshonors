@@ -76,7 +76,7 @@ body
     font-size: 17px;
     line-height: 1.55;
 
-    padding-top: 50px;
+    padding-top: 80px;
 
     color: #222;
 }
@@ -102,6 +102,7 @@ h6,
 h1,
 .h1
 {
+    font-family: 'Din Next LT Pro', 'Roboto', sans-serif;
     font-size: 5rem;
     line-height: 5rem;
 
@@ -194,11 +195,6 @@ h4,
 
     color: #666;
 }
-.cell h4,
-.cell .h4
-{
-    margin-top: .5rem;
-}
 p,
 ul,
 ol,
@@ -238,11 +234,94 @@ small,
 {
     color: rgba(92, 46, 145, .4);
 }
+body.home
+{
+    padding-top: 0;
+}
+.hero
+{
+    padding-top: 80px;
+
+    text-align: center;
+
+    color: #fff;
+    background: #ffcb05 url(../img/hero.min.jpg) center 30px no-repeat;
+    background-size: cover;
+
+    -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 768px)
+{
+    .hero
+    {
+        padding-top: 100px;
+
+        background-position: center;
+    }
+}
+@media (min-width: 992px)
+{
+    .hero
+    {
+        padding-top: 200px;
+    }
+}
+.hero h1,
+.hero .h1
+{
+    font-size: 6rem;
+    line-height: 1;
+
+    margin-bottom: 1rem;
+
+    color: inherit;
+}
+@media (min-width: 768px)
+{
+    .hero h1,
+    .hero .h1
+    {
+        font-size: 7.5rem;
+    }
+}
+@media (min-width: 992px)
+{
+    .hero h1,
+    .hero .h1
+    {
+        font-size: 8rem;
+    }
+}
+.hero p
+{
+    font-size: 2rem;
+}
+@media (min-width: 768px)
+{
+    .hero p
+    {
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 992px)
+{
+    .hero p
+    {
+        font-size: 3rem;
+    }
+}
+.hero .hero-logo img
+{
+    width: 90px;
+}
 .lead
 {
     font-size: 2rem;
+    line-height: 1.8;
 
     margin-bottom: .5rem;
+
+    text-align: center;
 
     color: #444;
 }
@@ -259,9 +338,10 @@ small,
 }
 .navbar-default
 {
-    border: none;
     border-bottom: 1px solid rgba(92, 46, 145, .15);
     background-color: rgba(255, 255, 255, .9);
+
+    -webkit-font-smoothing: antialiased;
 }
 .navbar-default .navbar-brand
 {

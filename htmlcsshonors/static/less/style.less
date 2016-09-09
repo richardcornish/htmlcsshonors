@@ -9,11 +9,11 @@
 
 
 body {
+    padding-top: 80px;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
     line-height: 1.55;
     color: @text-color;
-    padding-top: 50px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, .h1 {
     margin: 0 0 2rem;
     color: @golden;
+    font-family: "Din Next LT Pro", "Roboto", sans-serif;
     font-size: 5rem;
     line-height: 5rem;
     letter-spacing: -2px;
@@ -80,12 +81,6 @@ h4, .h4 {
     color: @text-color-lighter;
 }
 
-.cell {
-    h4, .h4 {
-        margin-top: .5rem;
-    }
-}
-
 p, ul, ol, dl, address, ul ul, ol ul, ul ol, ol ol {
     margin-bottom: 1rem;
 }
@@ -113,10 +108,56 @@ small, .small {
     color: fade(@purple, 40%);
 }
 
+body.home {
+    padding-top: 0;
+}
+
+.hero {
+    padding-top: 80px;
+    background: @golden url(../img/hero.min.jpg) center 30px no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    @media (min-width: 768px) {
+        background-position: center;
+        padding-top: 100px;
+    }
+    @media (min-width: 992px) {
+        padding-top: 200px;
+    }
+    h1, .h1 {
+        color: inherit;
+        font-size: 6rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+        @media (min-width: 768px) {
+            font-size: 7.5rem;
+        }
+        @media (min-width: 992px) {
+            font-size: 8rem;
+        }
+    }
+    p {
+        font-size: 2rem;
+        @media (min-width: 768px) {
+            font-size: 2.5rem;
+        }
+        @media (min-width: 992px) {
+            font-size: 3rem;
+        }
+    }
+    .hero-logo img {
+        width: 90px;
+    }
+}
+
 .lead {
     margin-bottom: .5rem;
     font-size: 2rem;
+    line-height: 1.8;
     color: @text-color-light;
+    text-align: center;
     @media (min-width: 768px) {
         font-size: 2.5rem;
     }
@@ -128,8 +169,8 @@ small, .small {
 
 .navbar-default {
     background-color: rgba(255, 255, 255, .9);
-    border: none;
     border-bottom: 1px solid fade(@purple, 15%);
+    -webkit-font-smoothing: antialiased;
     .navbar-brand {
         color: @purple;
         &:hover, &:focus {

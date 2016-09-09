@@ -17,38 +17,36 @@
     <link rel="shortcut icon" href="{% static '/static/img/favicon.ico' %}">
 </head>
 
-<body>
+<body class="{% block body_class %}{% endblock %}">
 
-<div class="sp-sm-4">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">                              
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <header>
-                            <a class="navbar-brand" href="{% url "/index.html" %}"><img src="{% static '/static/img/logo.svg' %}" alt="HTML &amp; CSS Honors logo"> HTML &amp; CSS Honors</a>
-                        </header>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="{% if_current_page '/about.html' 'active' '' %}"><a href="{% url "/about.html" %}">About</a></li>
-                            <li class="{% if_current_page '/materials.html' 'active' '' %}"><a href="{% url "/materials.html" %}">Materials</a></li>
-                            <li class="{% if_current_page '/schedule.html' 'active' '' %}"><a href="{% url "/schedule.html" %}">Schedule</a></li>
-                            <li class="{% if_current_page '/assessment.html' 'active' '' %}"><a href="{% url "/assessment.html" %}">Assessment</a></li>
-                            <li class="{% if_current_page '/instructors.html' 'active' '' %}"><a href="{% url "/instructors.html" %}">Instructors</a></li>
-                        </ul>
-                    </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">                              
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <header>
+                        <a class="navbar-brand" href="{% url "/index.html" %}"><img src="{% static '/static/img/logo.min.svg' %}" alt="HTML &amp; CSS Honors logo"> HTML &amp; CSS Honors</a>
+                    </header>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="{% if_current_page '/about.html' 'active' '' %}"><a href="{% url "/about.html" %}">About</a></li>
+                        <li class="{% if_current_page '/materials.html' 'active' '' %}"><a href="{% url "/materials.html" %}">Materials</a></li>
+                        <li class="{% if_current_page '/schedule.html' 'active' '' %}"><a href="{% url "/schedule.html" %}">Schedule</a></li>
+                        <li class="{% if_current_page '/assessment.html' 'active' '' %}"><a href="{% url "/assessment.html" %}">Assessment</a></li>
+                        <li class="{% if_current_page '/instructors.html' 'active' '' %}"><a href="{% url "/instructors.html" %}">Instructors</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </nav>
-</div>
+    </div>
+</nav>
 
 {% block content_container %}
 <main>    
