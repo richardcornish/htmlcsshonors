@@ -37,7 +37,7 @@
                         <div class="col-xs-6 col-xs-offset-3 col-sm-12 col-sm-offset-0">
                             <div class="sp-sm-2">
                                 {% with post.author|slugify as author_slug %}
-                                {% with '/static/img/instructors-'|add:author_slug|add:'.min.jpg' as author_image %}
+                                {% with '/static/img/instructors-'|add:author_slug|add:'.jpg' as author_image %}
                                 <img src="{% static author_image %}" class="img-responsive img-circle" alt="{{ post.author }}">
                                 {% endwith %}
                                 {% endwith %}
