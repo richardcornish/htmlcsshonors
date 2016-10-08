@@ -109,46 +109,141 @@ small, .small {
 }
 
 body.home {
-    padding-top: 0;
+    padding-top: 50px;
+    @media (min-width: 768px) {
+        padding-top: 0;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    // Most rules are for white on gold
+    .navbar-default {
+        background-color: @golden;
+        border-bottom: none;
+        @media (min-width: 768px) {
+            background-color: rgba(255, 203, 5, .9);
+        }
+    }
+    .navbar-brand {
+        color: #fff;
+        &:hover, &:focus {
+            color: #fff;
+        }
+    }
+    .navbar-nav {
+        > li > a {
+            color: #fff;
+            &:hover, &:focus {
+                color: #fff;
+                background-color: fade(#fff, 5%);
+            }
+        }
+        > .active > a {
+            &, &:hover, &:focus {
+                color: #fff;
+            }
+        }
+    }
+    .navbar-toggle {
+        border-color: transparent;
+        &:hover, &:focus {
+            background-color: fade(#fff, 5%);
+        }
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+    .navbar-collapse {
+        border-color: fade(#fff, 15%);
+    }
+}
+
+.img-hero {
+    display: block;
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .hero {
-    padding-top: 80px;
-    background: @golden url(../img/hero.min.jpg) center 30px no-repeat;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
     @media (min-width: 768px) {
-        background-position: center;
-        padding-top: 100px;
+        padding-top: 80px;
+        padding-top: 320px;
+        background: url(../img/hero.jpg) center center no-repeat;
+        background-size: cover;
     }
     @media (min-width: 992px) {
-        padding-top: 200px;
+        padding-top: 420px;
+    }
+    .hero-tagline {
+        margin: 0 -15px;
+        padding: 2rem;
+        color: #fff;
+        background-color: @golden;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        img {
+            display: block;
+            vertical-align: top;
+            margin: 0 auto 2rem;
+            width: 60px;
+        }
+        @media (min-width: 768px) {
+            margin-bottom: 4rem;
+            border-radius: 1rem;
+            padding: 1.5rem 3rem 2rem;
+            background-color: rgba(255, 203, 5, .9);
+            img {
+                display: inline;
+                margin-top: 8px;
+                margin-right: 1rem;
+            }
+        }
+        @media (min-width: 992px) {
+            padding: 2rem 4rem 3rem;
+            img {
+                width: 70px;
+            }
+        }
     }
     h1, .h1 {
         color: inherit;
-        font-size: 6rem;
+        font-weight: normal;
         line-height: 1;
         margin-bottom: 1rem;
         @media (min-width: 768px) {
-            font-size: 7.5rem;
+            font-size: 6.4rem;
         }
         @media (min-width: 992px) {
-            font-size: 8rem;
+            font-size: 7.2rem;
         }
     }
     p {
+        margin-bottom: 0;
         font-size: 2rem;
         @media (min-width: 768px) {
-            font-size: 2.5rem;
-        }
-        @media (min-width: 992px) {
-            font-size: 3rem;
+            font-size: 2.6rem;
         }
     }
-    .hero-logo img {
-        width: 90px;
+}
+
+.hero-cursor {
+    margin-left: 3px;
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    background-color: #fff;
+    animation: blink 1.5s ease-in-out infinite;
+    @media (min-width: 768px) {
+        width: 23px;
+    }
+}
+
+@keyframes blink {
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
     }
 }
 

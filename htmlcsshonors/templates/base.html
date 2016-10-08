@@ -22,7 +22,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">                              
+            <div class="{% block nav_col %}col-lg-12{% endblock %}">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -31,7 +31,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <header>
-                        <a class="navbar-brand" href="{% url "/index.html" %}"><img src="{% static '/static/img/logo.min.svg' %}" alt="HTML &amp; CSS Honors logo"> HTML &amp; CSS Honors</a>
+                        <a class="navbar-brand" href="{% url "/index.html" %}"><img src="{% block navbar_logo %}{% static '/static/img/logo.min.svg' %}{% endblock %}" alt="HTML &amp; CSS Honors logo"> HTML &amp; CSS Honors</a>
                     </header>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

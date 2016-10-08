@@ -4,29 +4,21 @@
 {% block body_class %}home{% endblock %}
 
 
+{% block navbar_logo %}{% static '/static/img/logo.white.min.svg' %}{% endblock %}
+
+
 {% block content_container %}
 
-<div class="hero">
-    <div class="sp-sm-4">
+<a href="{% static '/static/img/hero.jpg' %}"><img src="{% static '/static/img/hero.jpg' %}" alt="HTML &amp; Honors students" class="img-hero img-responsive"></a>
+
+<div class="sp-sm-4">
+    <div class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="hero-logo center-block">
-                        <div class="sp-sm-4">
-                            <img src="{% static '/static/img/logo.white.min.svg' %}" alt="HTML &amp; CSS Honors logo">
-                        </div>
-                    </div>
-                    <h1>HTML &amp; CSS Honors</h1>
-                </div>
-            </div>
-        </div>
-        <div class="hero-tagline">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-10 col-md-offset-1">
-                        <div class="sp-sm-4">
-                            <p><strong>HTML &amp; CSS Honors</strong> is a summer computer course that teaches academically talented students <strong>how to create websites</strong> in the languages of <strong>HTML</strong> and <strong>CSS</strong>.</p>
-                        </div>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="hero-tagline">
+                        <h1><img src="{% static '/static/img/logo.white.min.svg' %}" alt="HTML &amp; CSS Honors logo"> HTML &amp; CSS Honors</h1>
+                        <p>HTML &amp; CSS Honors is a summer computer course that teaches academically talented students how to create websites in the languages of <strong>HTML</strong> and <strong>CSS</strong> <span class="hero-cursor"></span></p>
                     </div>
                 </div>
             </div>
@@ -86,7 +78,7 @@
         <div class="col-sm-12 col-lg-10 col-lg-offset-1">
             <div class="sp-sm-4">
                 <div class="lead">
-                    <p>The course is part of the <a href="http://www.ctd.northwestern.edu/program/spectrum">Spectrum summer program</a> for students offered by the <a href="http://www.ctd.northwestern.edu/">Center for Talent Development</a>, a non-profit center within the <a href="https://www.sesp.northwestern.edu/">School of Education and Social Policy</a> at <a href="http://www.northwestern.edu/">Northwestern University</a>.</p>
+                    <p>HTML &amp; CSS Honors is part of the <a href="http://www.ctd.northwestern.edu/program/spectrum">Spectrum summer program</a> for students offered by the <a href="http://www.ctd.northwestern.edu/">Center for Talent Development</a>, a non-profit center within the <a href="https://www.sesp.northwestern.edu/">School of Education and Social Policy</a> at <a href="http://www.northwestern.edu/">Northwestern University</a>.</p>
                 </div>
             </div>
         </div>
@@ -104,14 +96,5 @@
 
         </div>
     </div>
-    {% comment %}
-    <div class="row">
-        <div class="col-sm-12 col-lg-12">
-            <div class="sp-sm-4">
-                <a href="{% static '/static/img/class.min.jpg' %}"><img src="{% static '/static/img/class.min.jpg' %}" class="img-responsive img-rounded" alt="Class photo"></a>
-            </div>
-        </div>
-    </div>
-    {% endcomment %}
 </div>
 {% endblock %}
