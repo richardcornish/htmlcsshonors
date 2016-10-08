@@ -5,7 +5,8 @@ from django.utils.encoding import force_text
 
 
 def evade(value):
-    """
+    """Escape a string.
+
     Escape string value as a numeric character reference,
     randomly either in decimal or hexadecimal form
 
