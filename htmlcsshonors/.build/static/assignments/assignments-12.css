@@ -1,0 +1,134 @@
+body {
+    margin: 100px;
+    padding: 0;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.shape-1 {
+    background-image: linear-gradient(#F36231, #F23965);
+    transform: rotate(89deg) scale(1.7);
+}
+
+.shape-2 {
+    background-image: linear-gradient(#F59500, #F36231);
+    transform: translate(-15px, 5%);
+    /*or transform: translateX(-15px) translateY(5%);*/
+}
+
+.shape-3 {
+    background-image: linear-gradient(#FAD943, #EDC200);
+    transform: perspective(200px) skewY(10deg) rotateX(45deg);
+    transform-origin: bottom right;
+    /*or transform-origin: 100% 100%;*/
+}
+
+.shape-4 {
+    background-image: linear-gradient(#72EBC7, #71C9FD);
+    transform: perspective(148px) rotateY(64deg);
+}
+
+.shape-5 {
+    background-color: #5D5DD8;
+    transform: perspective(204px) rotateX(23deg) scale(1.64) scaleZ(1.99);
+}
+
+.shape-6 {
+    background-color: #3880FF;
+    transform: rotateY(180deg);
+    /*or transform: scaleX(-1);*/
+    /*or transform: scale(-1, 1);*/
+}
+
+.shape-7 {
+    background-color: #52ABDD;
+    transition: background-color .5s linear;
+}
+
+.shape-7:hover {
+    background-color: #AAA;
+}
+
+.shape-8 {
+    background-color: rgb(246, 165, 0);
+    transition: background-color .5s linear, border-radius 1.3s ease-in-out;
+}
+
+.shape-8:hover {
+    background-color: #57890a;
+    border-radius: 50%;
+}
+
+.shape-9 {
+    background-color: rgb(87, 137, 10);
+    position: relative;
+    animation: shape9 2s ease-in infinite;
+}
+
+.shape-10 {
+    background-color: rgb(208, 2, 159);
+    position: relative;
+    animation: shape10 1s ease-out infinite;
+}
+
+.stage {
+    background-color: #eee;
+    margin-bottom: 50px;
+}
+
+.stage-1 {
+    width: 300px;
+    height: 300px;
+}
+
+.stage-2 {
+    width: 100%;
+    height: 200px;
+}
+
+.stage-2:active .shape {
+    animation-play-state: paused;
+}
+
+@keyframes shape9 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 200px;
+        top: 0;
+    }
+    50% {
+        left: 200px;
+        top: 200px;
+        background-color: #678fa3;
+        border-radius: 50%;
+    }
+    75% {
+        left: 0;
+        top: 200px;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes shape10 {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+        transform: rotate(720deg);
+    }
+    100% {
+        left: 0;
+        transform: rotate(0);
+    }
+}
