@@ -1,10 +1,8 @@
 # HTML & CSS Honors
 
-This repository contains the source code of the HTML & CSS Honors course website. Deployed to Amazon S3.
+This repository contains the source code of the HTML & CSS Honors course website.
 
 [http://htmlcsshonors.org](http://htmlcsshonors.org/)
-
-[http://htmlcsshonors.org.s3-website-us-east-1.amazonaws.com](http://htmlcsshonors.org.s3-website-us-east-1.amazonaws.com/)
 
 ## Install
 
@@ -32,9 +30,9 @@ gulp watch
 ```
 gulp
 cactus build
-cactus deploy
+git subtree push --prefix htmlcsshonors/.build/ origin gh-pages
 ```
 
 ## Docs
 
-[Cactus documentation](https://github.com/koenbok/cactus)
+[Cactus documentation](https://github.com/eudicots/Cactus)
