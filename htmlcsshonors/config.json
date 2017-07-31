@@ -1,6 +1,6 @@
 {
     "aws-access-key": "AKIAIXIGX5WDE7O35CLQ",
-    "aws-bucket-name": "htmlcsshonors.org",
-    "aws-bucket-website": "htmlcsshonors.org.s3-website-us-east-1.amazonaws.com",
+    "aws-bucket-name": "htmlcsshonors",
+    "aws-bucket-website": "htmlcsshonors.s3-website-us-east-1.amazonaws.com",
     "prettify": true
 }
